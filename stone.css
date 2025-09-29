@@ -1,0 +1,105 @@
+:root{
+        --primary-color: #990011;
+        --secondary-color:  #8AAAE5;
+        --text-color:  #990011;
+        --font-family: 'Arial', sans-serif;
+        --heading-color:#F52549;
+        --code-color: #A6B37D;
+    }
+    .header{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        margin: 10px;
+        border: 20px;
+        
+        align-items: center;
+        background-color: var(--secondary-color);
+        padding: 10px 20px;
+        color: vwhite;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .logo-img{
+        width: 30px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .nav-links ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        font-size: larger;
+        font-weight: bold;
+        cursor: pointer;
+    
+    }
+    .nav-links ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .home-img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+    #home h1{
+        color: var(--text-color);
+        font-size:xx-large ;
+    
+    }
+    #home p{
+        font-size: larger;
+        font-weight: inherit;
+        line-height: 1.6;
+    }
+    #home{
+        padding: 30px;
+        margin: 20px;
+    }
+    #home ol{
+        font-size: larger;
+        font-weight: inherit;
+        line-height: 1.6;
+    }
+    #about{
+        padding: 30px;
+        margin: 20px;
+        background-color: var(--secondary-color);
+
+    }
+    #about h1{
+        color: var(--heading-color);
+        font-size: x-large;
+    }
+    #code{
+        padding: 30px;
+        margin: 20px;
+        background-color: var(--primary-color);
+    }
+    pre{
+        background-color: var(--code-color);
+        padding: 20px;
+        border-radius: 10px;
+        overflow-x: auto;
+    }
+@media screen and (max-width: 768px) {
+        .header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .nav-links ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .cv {
+            text-align: left;
+            margin-top: 10px;
+        }
+    
+}

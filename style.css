@@ -1,0 +1,240 @@
+
+        :root {
+            --primary-color: #A8BBA3;
+            --secondary-color: #DC143C;
+            --font-family: 'Arial, sans-serif';
+            --bottom: #37353E;
+            --third-color: rgb(43, 40, 40);
+            --heading-color:  #a28089;
+            --fourth-color: #4B5945;
+            --fifth-color: #bfd663;
+            --sixth-color: #89AC46;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: var(--primary-color);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            flex: 1; 
+        }
+
+        .logo img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+
+       
+        .nav-links ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            font-size: x-large;
+            height: 70px;
+            
+            text-transform: uppercase;
+            
+           
+            
+
+        }
+        .nav-links ul li a {
+            text-decoration: none;
+            color: var(--third-color);
+            
+        }
+
+       
+        
+
+        .cv {
+            flex: 1; 
+            text-align: right;
+        }
+
+        .cv button {
+            background: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        text-box: 70px;
+        uppercase: true;
+        }
+
+        .cv button:hover {
+            background: darkred;
+        }
+        #home {
+            display: flex;
+            padding: 50px;
+        }
+        .main h6{
+            
+            color: var(--third-color);
+        }
+        .main h1{
+            color: var(--third-color);
+            font-size: 50px;
+        }
+        .main h1 samp{
+            color: var(--secondary-color);
+           
+        }
+        .main h3 {
+            color: var(--third-color);
+            font-size: 50px;
+        }
+        .main h3 samp{
+            color: var(--secondary-color);
+        }
+        .hire{
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            color: var(--secondary-color);
+          background:whitesmoke;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        #about{
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            color: whitesmoke;
+             background: var(--fifth-color);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .about-img {
+    width: 70%;
+    height: 70%; 
+    padding: 40px;
+    border-radius: none;
+    padding-bottom: 30px;
+        }
+        #about {
+            display: flex;
+            
+        }
+        .about-text h1 {
+            font-size: 50px;
+            color: var(--secondary-color);
+           
+        }
+        .about-text p {
+            font-size: 20px;
+            color: var(--third-color);
+            line-height: 1.6;
+        }
+        .about-text h3 {
+            font-size: 30px;
+            color: var(--heading-color);
+            margin-top: 20px;
+        }
+        .programs{
+            display: flex;
+            justify-content: center;
+           
+            gap: 20px;
+            padding: 20px;
+        }
+        #skills{
+          padding: 30px;
+          background-color: var(--primary-color);
+        }
+        #projects{
+            padding: 30px;
+            color: var(--heading-color);
+            animation: name duration timing-function delay iteration-count direction fill-mode;     
+        }
+        .QR{
+            gap: 20px;
+            display: flex;
+           text-align: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        #HIREME {
+            padding: 30px;
+            background-color: var(--sixth-color);
+            
+        }
+        #HIREME h1{
+            color: var(--secondary-color);
+            text-align: center;
+            font-size: 50px;
+        }
+        .contact-img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            }
+        #contact h5{
+            text-align: center;
+           color: var(--secondary-color);
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+         #contact {
+            background-color: var(--bottom);
+
+         } 
+         @media screen and (max-width: 750 x 1334px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links ul {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .cv {
+                text-align: left;
+                margin-top: 10px;
+            }
+
+            #home {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            #about {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .programs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+         }
+
+   
+   
+        

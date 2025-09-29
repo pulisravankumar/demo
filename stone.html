@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="Qr.css">
+</head>
+    
+
+    <header class="header">
+        <div class="logo">
+            <img src="C:\Users\BHARGAV\Desktop\html\prototype\images\Rock_paper_scissors_Feature_img.png" alt="logo" class="logo-img" >
+            <h1>QR Code project</h1>
+        </div>
+        <div class="nav-links">
+         <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#code">Code</a></li>
+         </ul>
+        </div>
+
+    </header>
+    <section id="home">
+        <h1>HOME</h1>
+        <img src="C:\Users\BHARGAV\Desktop\html\prototype\images\maxresdefault.jpg" alt="logo" class="home-img">
+     <h1>Overview</h1>
+     <p>Stone, Paper, Scissors is a beginner-friendly Python project that helps you understand how to use logic, randomization, and user interaction. In this project, the computer becomes one player, and you (the user) are the other player.</p>
+     <h1>Stone (Rock), Paper, Scissors is a classic hand game usually played between two players. The rules are simple:</h1>
+<ol>
+    <li>Rock (Stone) beats Scissors.</li>
+    <li>Scissors beats Paper.</li>
+    <li>Paper beats Rock (Stone).</li>
+</ol>
+
+    </section>
+    <section id="about">
+        <h1>About project</h1>
+        <h2>Choices Available</h2>
+        <p>The game has three possible moves: Stone (Rock), Paper, and Scissors.</p>
+        <h2>Game Rules</h2>
+        <ul>
+           <li>Stone beats Scissors.</li>
+           <li>Scissors beats Paper.</li>
+           <li>Paper beats Stone</li>
+           <li>If both players choose the same, it’s a tie.</li>
+        </ul>
+        <h2>Game Logic</h2>
+        <ul>
+           <li>The program compares the user’s choice with the computer’s choice.</li>
+           <li>Based on the rules, it declares the result as Win, Lose, or Tie.</li>
+        </ul>
+        <h1>complete game Logic</h1>
+        <li>Ask the user to enter their choice (Stone, Paper, or Scissors).</li>
+        <h3>Computer’s Turn</h3>
+        <li>The computer randomly selects its choice.</li>
+        <h1>Comparison</h1>
+        <li>If the user’s choice and the computer’s choice are the same → Tie</li>
+        <li>Otherwise, check the winning conditions:</li>
+            <ul>
+                <li>Stone vs Scissors → Stone wins</li>
+                <li>Scissors vs Paper → Scissors wins</li>
+                <li>Paper vs Stone → Paper wins</li>
+            </ul>
+
+    <main>
+        <div id="code">
+            <h1>Code</h1>
+            <h2>sample code of stone Paper Scissors game</h2>
+            <pre>
+import random
+
+def play_rps(user_choice):
+    choices = ["Stone", "Paper", "Scissors"]
+    computer_choice = random.choice(choices)
+    print(f"Computer chose: {computer_choice}")
+
+    if user_choice == computer_choice:
+        return "It's a tie!"
+    elif (user_choice == "Stone" and computer_choice == "Scissors") or \
+         (user_choice == "Paper" and computer_choice == "Stone") or \
+         (user_choice == "Scissors" and computer_choice == "Paper"):
+        return "You win!"
+    else:
+        return "You lose!"
+
+user_input = input("Enter your choice (Stone, Paper, Scissors): ")
+result = play_rps(user_input)
+print(result)
+
+            </pre>
+        </div>
+    </main>
+
+</body>
+</html>
+
+            

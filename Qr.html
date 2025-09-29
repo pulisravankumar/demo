@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="Qr.css">
+</head>
+    
+
+    <header class="header">
+        <div class="logo">
+            <img src="C:\Users\BHARGAV\Desktop\html\prototype\images\af7decdbc7a28ed597c4bb6e46036d53.jpg" alt="logo" class="logo-img" >
+            <h1>QR Code project</h1>
+        </div>
+        <div class="nav-links">
+         <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#code">Code</a></li>
+         </ul>
+        </div>
+
+    </header>
+    <section id="home">
+        <h1>HOME</h1>
+        <img src="C:\Users\BHARGAV\Desktop\html\prototype\images\thumb-1920-914159.png" alt="logo" class="home-img">
+        <ol>
+            <li>Scan & Go!" – Quick and catchy for instant engagement</li>
+            <li>"Your Code, Your World!" – Makes the QR code feel personal.</li>
+            <li>"Tap, Scan, Connect!" – Shows action clearly</li>
+            <li>"Smart Links, Simple Scans!" – Highlights usefulness</li>
+            <li>"From Print to Digital in Seconds!" – Explains purpose fast.</li>
+            <li>One Scan, Endless Possibilities!" – Inspiring and futuristic.</li>
+            <li>"Generate. Share. Scan." – Straightforward and professional</li>
+        </ol>
+
+    </section>
+    <section id="about">
+        <h1>About project</h1>
+        <h2>What is a QR Code Project in Python?</h2>
+        <p>A QR (Quick Response) code project in Python is an application that allows you to generate, customize, and read QR codes using Python libraries. These QR codes can store URLs, text, contact details, Wi-Fi credentials, and more. Such a project is often used for learning purposes, portfolio projects, or real-world applications (like business cards, payments, event tickets, etc.).</p>
+        <h2>Libraries Commonly Used</h2>
+        <ul>
+            <li><strong>qrcode:</strong> A simple library to generate QR codes.</li>
+            <li><strong>opencv-python:</strong> Used for reading QR codes from images.</li>
+            <li><strong>Pillow:</strong> A Python Imaging Library to manipulate images.</li>
+        </ul>
+        <h2>Core Features of a Python QR Code Project</h2>
+        <ul>
+            <li><strong>QR Code Generation:</strong> Create QR codes from text, URLs, or other data.</li>
+            <li><strong>Customization:</strong> Change colors, add logos, and adjust error correction levels.</li>
+            <li><strong>QR Code Reading:</strong> Scan and decode QR codes from images or webcam input.</li>
+            <li><strong>User Interface:</strong> A simple GUI using Tkinter or a web interface using Flask/Django.</li>
+        </ul>
+    </section>
+
+    <main>
+        <div id="code">
+            <h1>Code</h1>
+            <h2>Sample Code to Generate a QR Code in Python</h2>
+            <pre>
+import qrcode
+
+data = "https://instagram.com/__m.r_cool___?igshid=MzRlODBiNWFlZA=="
+
+qr = qrcode.QRCode(
+    version=10,
+    box_size=20,
+    border=15,
+)
+
+qr.add_data(data)
+qr.make(fit=True)
+
+img = qr.make_image(fill_color="yellow", back_color="white")
+
+img.save("my_qrcode.png")
+
+img.show()
+            </pre>
+        </div>
+    </main>
+    <script>
+        alert("Welcome to QR Code Project");
+    </script>
+
+</body>
+</html>
